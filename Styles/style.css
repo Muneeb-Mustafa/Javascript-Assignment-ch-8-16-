@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #F3EDE5;
+
+}
+
+.divider{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.651);
+    padding-top: 30px;
+}
+
+.row{
+    padding: 0px 40px;
+}
