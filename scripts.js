@@ -5,7 +5,8 @@ document.getElementById("alert").onclick= function(){
     let string2 = prompt("Enter Second string please")
     let fullString = string1 + " " + string2
     // let statement = alert("Muneeb Mustafa")
-    document.getElementById('Statement').innerHTML = 'You entered' + "  " + string1 + ' ' + 'and' + ' ' + string2 + '.';
+    // document.getElementById('Statement').innerHTML = 'You entered' + "  " + string1 + ' ' + 'and' + ' ' + string2 + '.';
+    document.getElementById('Statement').innerHTML = `You entered ${string1} and ${string2}`;
     document.getElementById('output').innerHTML = "<p class = 'text-center'>" + 'The concatenate string is' + "  " + string1 + ' ' + string2 + ".<br>" + 'Thanks! try it again.' + "</p>"
     // alert("Muneeb Mustafa")
     
@@ -54,7 +55,7 @@ document.getElementById("camel").onclick = function() {
     let num3;
     
     // Determine the discount based on the price
-    if (price < 1000) {
+    if (price < 1000 && price > 0) {
         num3 = 'You can avail 30% Discount!';
     } else if (price < 1500) {
         num3 = 'You can avail 40% Discount!';
@@ -88,7 +89,7 @@ document.getElementById("subtract_num").onclick = function(){
     let num3;
     
     // Determine the discount based on the price
-    if (score >= 80 && score < 100) {
+    if (score >= 80 || score < 100) {
         num3 = 'Congrats you are Eligible!';
     }else {
         num3 = 'You are absolutely not eligible!';
